@@ -20,11 +20,11 @@ Vous êtes responsable de déployer une infrastructure mettant en œuvre des mic
 # Analyse à livrer et à appuyer mathématiquement
 Les load balancers offrent différentes stratégies de répartition de charge. Il vous est demandé d’en implémenter 2 différentes, de mettre l’infrastructure en charge et de prouver que la répartition fonctionne bien comme demandée.
 
-* (LB Policies)[https://www.f5.com/company/blog/nginx/choosing-nginx-plus-load-balancing-techniques]
+* [LB Policies](https://www.f5.com/company/blog/nginx/choosing-nginx-plus-load-balancing-techniques)
 
 Pour valider d’un point de vue mathématiques, il vous est demandé de faire des sessions de charges et de documenter les données observées et collectés.
 
-* (Get Docker Metrics)[https://docs.docker.com/config/daemon/prometheus/]
+* [Get Docker Metrics](https://docs.docker.com/config/daemon/prometheus/)
 
 # Contraintes
 Un orchestrer type K8s pourrait très bien réaliser ce contexte aisément, mais l’idée et de vous offrir la possibilité de configurer manuellement les composants à ensuite observer.
