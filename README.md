@@ -8,7 +8,8 @@ Il s’agit de réaliser un laboratoire pratique impliquant aussi bien des notio
 Vous êtes responsable de déployer une infrastructure mettant en œuvre des micro-services de différentes natures.
 
 •	Un micro-service MySql : pour assurer la persistance de données.
-    * [Docker - Official MySql Image](https://hub.docker.com/_/mysql)
+
+   * [Docker - Official MySql Image](https://hub.docker.com/_/mysql)
 
 •	Un micro-service NGINX : pour assurer le rôle de reverse proxy et load balancer.
    * [Docker - Official Nginx Image](https://hub.docker.com/_/nginx)
@@ -35,14 +36,14 @@ Le tout doit être livré sur ce dépôt.
 * Un rapport présentant vos observations et conclusions.
 * Le code nécessaire pour déployer l'infra.
 * Un défense finale (à définir):
-   * démonstration fonctionnelle de l'infra,
-   * capture de métriques
-   * génération des graphiques
-   * explication mathématiques des stratégies de répartitions de charges.
+   * Démonstration fonctionnelle de l'infra.
+   * Capture de métriques.
+   * Génération des graphiques.
+   * Explication mathématiques des stratégies de répartitions de charges (graphiques, fonctions mathématiques utilisées).
 
 # Critères d'évaluation
 
 * Les livrables attendus sont tous présents et de bonnes qualités. 
 * L’effort produit vaut, a minima, les heures de cours manqués. 
 * L’aspect mathématique doit valoir au moins de 30%.
-* Les différentes pratiques vues en classes ont été suivi (git-branches, conventional commits, issues, schéma UML nécessaires).
+* Les différentes pratiques vues en classes ont été suivies (git-branches, conventional commits, issues, schéma UML nécessaires).
