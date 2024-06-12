@@ -22,7 +22,7 @@ Les load balancers offrent différentes stratégies de répartition de charge. I
 
 * [LB Policies](https://www.f5.com/company/blog/nginx/choosing-nginx-plus-load-balancing-techniques)
 
-Pour valider d’un point de vue mathématiques, il vous est demandé de faire des sessions de charges et de documenter les données observées et collectés.
+Pour valider d’un point de vue mathématiques, il vous est demandé de faire des sessions de charges et de documenter les données observées et collectées.
 
 * [Get Docker Metrics](https://docs.docker.com/config/daemon/prometheus/)
 
