@@ -1,0 +1,24 @@
+name: "tasks"
+services:
+  app:
+    container_name: "spring-api"
+    build: .
+    ports:
+      - 8080:8080
+    depends_on:
+      - mysqldb
+    restart: always
+  mysqldb:
+    container_name: "mysql"
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: tasks
+      MYSQL_USER: spring_user
+      MYSQL_PASSWORD: spring_user_password
+volumes:
+  mysql-data:
