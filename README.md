@@ -30,20 +30,23 @@ Pour valider d’un point de vue mathématiques, il vous est demandé de faire d
 Un orchestrer type K8s pourrait très bien réaliser ce contexte aisément, mais l’idée et de vous offrir la possibilité de configurer manuellement les composants à ensuite observer.
 
 # Livrables
-Le tout doit être livré sur ce dépôt.
+Les documents suivants doivent être partagé via un dossier office 365:
 
 * Journal de travail permettant de retracer vos actions et le temps investi.
 * Un rapport présentant vos observations et conclusions.
+
+Sur ce dépôt:
 * Le code nécessaire pour déployer l'infra.
-* Un défense finale (à définir):
+
+* Une défense finale sur le site de Ste-Croix, le lundi 24 juin, 10h00:
    * Démonstration fonctionnelle de l'infra.
    * Capture de métriques.
    * Génération des graphiques.
-   * Explication mathématiques des stratégies de répartitions de charges (graphiques, fonctions mathématiques utilisées).
+   * Explications mathématiques des stratégies de répartitions de charges (graphiques, fonctions mathématiques utilisées).
 
 # Critères d'évaluation
 
-* Les livrables attendus sont tous présents et de bonnes qualités. 
+* Les livrables attendus sont tous présents et de bonne qualité. 
 * L’effort produit vaut, a minima, les heures de cours manqués. 
-* L’aspect mathématique doit valoir au moins de 30%.
-* Les différentes pratiques vues en classes ont été suivies (git-branches, conventional commits, issues, schéma UML nécessaires).
+* L’aspect mathématique doit valoir au moins de 30% du temps investi.
+* Les différentes pratiques vues en classes ont été suivies (git-branches, conventional commits, issues, schéma UML nécessaires, docker file, docker compose).
