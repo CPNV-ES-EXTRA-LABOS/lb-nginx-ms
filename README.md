@@ -14,7 +14,7 @@ Vous êtes responsable de déployer une infrastructure mettant en œuvre des mic
 •	Un micro-service NGINX : pour assurer le rôle de reverse proxy et load balancer.
    * [Docker - Official Nginx Image](https://hub.docker.com/_/nginx)
      
-•	4 micro-services API-Spring « identiques »: implémentant la logique métier (de votre choix)
+•	3 micro-services API-Spring « identiques »: implémentant la logique métier (de votre choix)
    * [Spring API-Rest Template](https://github.com/spring-guides/tut-rest)
 
 # Analyse à livrer et à appuyer mathématiquement
