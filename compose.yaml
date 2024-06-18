@@ -1,6 +1,6 @@
 name: "tasks"
 services:
-  app:
+  backend:
     build: .
     depends_on:
       - mysqldb
@@ -31,7 +31,7 @@ services:
     networks:
       - loadbalancing
     depends_on:
-      - app
+      - backend
 volumes:
   mysql-data:
 networks:
