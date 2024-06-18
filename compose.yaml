@@ -9,7 +9,7 @@ services:
       - loadbalancing
       - mysql
     deploy:
-      replicas: 4
+      replicas: 3
   mysqldb:
     container_name: "mysql"
     image: mysql:latest
@@ -32,6 +32,18 @@ services:
       - loadbalancing
     depends_on:
       - backend
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - loadbalancing
+      - mysql
+    depends_on:
+      - backend
+      - mysqldb
 volumes:
   mysql-data:
 networks:
