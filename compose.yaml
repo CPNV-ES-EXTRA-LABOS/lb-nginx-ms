@@ -1,16 +1,20 @@
 name: "tasks"
 services:
-  app:
-    container_name: "spring-api"
+  backend:
     build: .
-    ports:
-      - 8080:8080
     depends_on:
       - mysqldb
     restart: always
+    networks:
+      - loadbalancing
+      - mysql
+    deploy:
+      replicas: 4
   mysqldb:
     container_name: "mysql"
     image: mysql:latest
+    networks:
+      - mysql
     ports:
       - 3306:3306
     volumes:
@@ -20,5 +24,16 @@ services:
       MYSQL_DATABASE: tasks
       MYSQL_USER: spring_user
       MYSQL_PASSWORD: spring_user_password
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+    networks:
+      - loadbalancing
+    depends_on:
+      - backend
 volumes:
   mysql-data:
+networks:
+  loadbalancing:
+  mysql:
