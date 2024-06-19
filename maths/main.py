@@ -6,7 +6,7 @@ import pandas as pd
 prometheus_url = "http://localhost:9090"
 prom = PrometheusConnect(url=prometheus_url, disable_ssl=True)
 
-start_time = parse_datetime("20m")
+start_time = parse_datetime("5m")
 end_time = parse_datetime("now")
 
 metric_data = prom.get_metric_range_data(
