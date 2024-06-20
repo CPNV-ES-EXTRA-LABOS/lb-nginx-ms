@@ -2,7 +2,7 @@ FROM openjdk:22-jdk-slim as build
 
 WORKDIR /app
 COPY . .
-RUN ./mvnw clean package -DskipTests
+RUN ./mvnw clean package
 
 FROM openjdk:22-jdk-slim
 WORKDIR /app
