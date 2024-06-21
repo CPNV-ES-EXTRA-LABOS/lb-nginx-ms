@@ -16,7 +16,8 @@ List all dependencies and their version needed by the project as :
 - Docker V26+
 ## Deployment
 ### IT
-This project is fully dockerized. To start it, simply run the following command:
+1. Edit /nginx/nginx.conf file to specify load balancing strategies ([LB Policies](https://www.f5.com/company/blog/nginx/choosing-nginx-plus-load-balancing-techniques))
+2. This project is fully dockerized. To start it, simply run the following command:
 ```bash
 docker-compose up -d
 ```
