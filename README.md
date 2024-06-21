@@ -81,9 +81,10 @@ Tasks
 ├── maths               # Contains a python script to draw functions
 ├── nginx               # Contains nginx configration for docker
 └── src                 # Contains the source code
-    └── main            
-        ├── java
-        └── resources
+    ├── main            
+    │    ├── java
+    │    └── resources
+    └── test            # Contains the application's unit tests 
 ```
 ## Collaborate
 ### Commit Message Guidelines
