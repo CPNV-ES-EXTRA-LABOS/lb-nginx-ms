@@ -81,11 +81,11 @@ python main.py
 Tasks
 ├── maths               # Contains a python script to draw functions
 ├── nginx               # Contains nginx configration for docker
-└── src                 # Contains the source code
+└── src                 # Contains tasks API source code
     ├── main            
     │    ├── java
     │    └── resources
-    └── test            # Contains the application's unit tests 
+    └── test            # Contains tasks API unit tests 
 ```
 ## Collaborate
 ### Commit Message Guidelines
